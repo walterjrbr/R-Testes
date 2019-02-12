@@ -27,17 +27,17 @@ metric = "Accuracy"
 
 #Avaliando os algoritmos
 
-# a) linear algorithms
+#  linear algorithms
 set.seed(7)
 fit.lda = train(Species~., data=dataset, method="lda", metric=metric, trControl=control)
-# b) nonlinear algorithms
+#  nonlinear algorithms
 # CART
 set.seed(7)
 fit.cart = train(Species~., data=dataset, method="rpart", metric=metric, trControl=control)
 # kNN
 set.seed(7)
 fit.knn = train(Species~., data=dataset, method="knn", metric=metric, trControl=control)
-# c) advanced algorithms
+#  advanced algorithms
 # SVM
 set.seed(7)
 fit.svm = train(Species~., data=dataset, method="svmRadial", metric=metric, trControl=control)
