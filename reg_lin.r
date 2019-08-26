@@ -21,6 +21,6 @@ abline(resmodelo,lty=3)
 
 # Testando valores 
 
-size_300 = data.frame(size = 550)
+size_300 = data.frame(size = 300)
 predict(resmodelo, size_300)
 
